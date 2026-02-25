@@ -34,7 +34,7 @@ def test_signup_activity_not_found():
 
 def test_unregister_success():
     # Arrange
-    email = "testuser@mergington.edu"
+    email = "uniqueuser@mergington.edu"
     activity = "Chess Club"
     client.post(f"/activities/{activity}/signup", params={"email": email})
     # Act
